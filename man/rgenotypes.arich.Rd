@@ -2,7 +2,7 @@
 \alias{rgenotypes.arich}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
- Estimates allelic richness from  population data sets with varying number of resampled genotypes (g)
+ Estimates allelic richness from  population data sets with varying number of resampled genotypes
 
 }
 \description{
