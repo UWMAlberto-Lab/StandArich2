@@ -33,7 +33,7 @@ plot.allele.freq(data, LocusNames,Plogbase=20,textlegend=0.8,freqlegend=c(0.1,0.
 \details{
 Depending on the number of populations and alleles in the data set, different combinations of psize and Plogbase arguments should be tried}
 \value{
-As many different plot windows as there are loci in the data file allowing a visualization  of allele frequencies at each locus across populations
+As many different plot windows as there are loci in the data file, allowing a visualization  of allele frequencies at each locus across populations
 }
 \references{
 Alberto F, Arnaud-Haond S, Duarte CM, Serrao EA (in press) Genetic diversity of a clonal angiosperm near its range limit: the case of \emph{Cymodocea nodosa} in the Canary Islands. Marine Ecology Progress Series
