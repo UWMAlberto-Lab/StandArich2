@@ -32,7 +32,7 @@ The multiple random reduction (Leberg 2002b) employed here gives similar estimat
 With StandArich.2 this functions removes the need to use stand.Arich function after using rgenotypes.arich. All results are now returned in a list
 }
 \value{
-The function returns a list with three elements R, A and stdA. R is a table containing information for all permutations, showing number of alleles observed at each n per loci, the mean number of alleles observed across loci (i.e., allelic richness per permutation), and the standard deviation of the number of alleles observed across loci. A is a table with the mean allelic richness across all permutations for each level of n for each population. Population data is organized by rows and different n values by columns. Finally, stdA is a table with the standard deviation across all permutations for each level of n for each population. The table format is identical to A, population by rows and n by columns. To get the allelic richness for a particular value of n for all populations, often the smallest sample size across all populations, just extract the column with corresponding n index from A.
+The function returns a list with three elements R, A and A.sd. R is a table containing information for all permutations, showing number of alleles observed at each n per loci, the mean number of alleles observed across loci (i.e., allelic richness per permutation), and the standard deviation of the number of alleles observed across loci. A is a table with the mean allelic richness across all permutations for each level of n for each population. Population data is organized by rows and different n values by columns. Finally, A.sd is a table with the standard deviation across all permutations for each level of n for each population. The table format is identical to A, population by rows and n by columns. To get the allelic richness for a particular value of n for all populations, often the smallest sample size across all populations, just extract the column with corresponding n index from A.
 }
 \references{
 Alberto F, Arnaud-Haond S, Duarte CM, Serrao EA (in press) Genetic diversity of a clonal angiosperm near
@@ -55,13 +55,4 @@ University of Wisconsin-Milwaukee
 \examples{
 data(Exdata)
 rgenotypes.arich(Exdata,g=10,loc.labels=paste("L",1:8,sep="."))
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory (show via RShowDoc("KEYWORDS")):
-% \keyword{ ~kwd1 }
-% \keyword{ ~kwd2 }
-% Use only one keyword per line.
-% For non-standard keywords, use \concept instead of \keyword:
-% \concept{ ~cpt1 }
-% \concept{ ~cpt2 }
-% Use only one concept per line.
 \keyword{manip}
