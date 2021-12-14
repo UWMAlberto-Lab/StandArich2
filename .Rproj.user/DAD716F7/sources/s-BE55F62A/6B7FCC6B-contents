@@ -1,0 +1,42 @@
+\name{Exdata}
+\alias{Exdata}
+\docType{data}
+\title{ Allelic data for three Cymodocea nodosa populations}
+\description{
+  Allelic data for three Cymodocea nodosa populations genotyped with 8 microsatellite loci
+}
+\usage{data(Exdata)}
+\format{
+  A data frame with 67 observations on the following 18 variables.
+  \describe{
+    \item{\code{pops}}{a factor with levels \code{Maurit} \code{Pblanca} \code{Pjandia}}
+    \item{\code{ind}}{Individual codes}
+    \item{\code{all1}}{Genotype at  locus 1 allele 1}
+    \item{\code{all2}}{Genotype at  locus 1 allele 2}
+    \item{\code{all3}}{Genotype at  locus 2 allele 1}
+    \item{\code{all4}}{Genotype at  locus 2 allele 2}
+    \item{\code{all5}}{Genotype at  locus 3 allele 1}
+    \item{\code{all6}}{Genotype at  locus 3 allele 2}
+    \item{\code{all7}}{Genotype at  locus 4 allele 1}
+    \item{\code{all8}}{Genotype at  locus 4 allele 2}
+    \item{\code{all9}}{Genotype at  locus 5 allele 1}
+    \item{\code{all10}}{Genotype at locus 5 allele 2}
+    \item{\code{all11}}{Genotype at locus 6 allele 1}
+    \item{\code{all12}}{Genotype at locus 6 allele 2}
+    \item{\code{all13}}{Genotype at locus 7 allele 1}
+    \item{\code{all14}}{Genotype at locus 7 allele 2}
+    \item{\code{all15}}{Genotype at locus 8 allele 1}
+    \item{\code{all16}}{Genotype at locus 8 allele 2}
+  }
+}
+
+\references{
+  Alberto F, Arnaud-Haond S, Duarte CM, Serrao EA (in press) Genetic diversity of a clonal angiosperm near
+  its range limit: the case of \emph{Cymodocea nodosa}in the Canary Islands. Marine Ecology Progress
+  Series
+}
+\examples{
+  data(Exdata)
+
+}
+\keyword{datasets}

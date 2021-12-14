@@ -1,0 +1,28 @@
+\name{Exresults}
+\alias{Exresults}
+\docType{data}
+\title{ A data frame with the results of rgenotypes.arich()}
+\description{
+  This data set simulates the data.frame returned by rgenotypes.arich()
+}
+\usage{data(Exresults)}
+\format{
+  A data frame with 134 observations on the following 12 variables.
+  \describe{
+    \item{\code{Pop}}{Population}
+    \item{\code{Ind}}{Number of genets in the random subsample}
+    \item{\code{A}}{Allelic richness; the mean number of alleles per locus}
+    \item{\code{sd_A}}{Standard deviation of the allelic richness}
+    \item{\code{L.1}}{number of alleles at locus 1}
+    \item{\code{L.2}}{number of alleles at locus 2}
+    \item{\code{L.3}}{number of alleles at locus 3}
+    \item{\code{L.4}}{number of alleles at locus 4}
+    \item{\code{L.5}}{number of alleles at locus 5}
+    \item{\code{L.6}}{number of alleles at locus 6}
+    \item{\code{L.7}}{number of alleles at locus 7}
+    \item{\code{L.8}}{number of alleles at locus 8}
+  }
+}
+
+
+\keyword{datasets}
