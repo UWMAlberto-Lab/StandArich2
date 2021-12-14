@@ -32,7 +32,7 @@ The multiple random reduction (Leberg 2002b) employed here gives similar estimat
 With StandArich.2 this functions removes the need to use stand.Arich function after using rgenotypes.arich. All results are now returned in a list
 }
 \value{
-A list with elements R, A and stdA. R is the full table with all permutations and number of alleles per loci and allelic richness and st dev per permutation. A is the table with the mean allelic richness across all permutations for each level of n for each population. Finally, stdA is the table with the st dev across all permutations for each level of n for each population. To get the allelic richness for a particular value of n, often the smalest sample size across all populations, just extract the column of indetical index from A. See examples.
+A list with elements R, A and stdA. R is the full table with all permutations and number of alleles per loci and allelic richness and st dev per permutation. A is the table with the mean allelic richness across all permutations for each level of n for each population. Finally, stdA is the table with the st dev across all permutations for each level of n for each population. To get the allelic richness for a particular value of n, often the smallest sample size across all populations, just extract the column of indetical index from A. See examples.
 }
 \references{
 Alberto F, Arnaud-Haond S, Duarte CM, Serrao EA (in press) Genetic diversity of a clonal angiosperm near
