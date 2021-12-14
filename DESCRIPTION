@@ -4,7 +4,7 @@ Title: Standardizes n to estimate allelic richness and plots
 Version: 2.0.0
 Author: Filipe Alberto
 Maintainer: Filipe Alberto <albertof@uwm.edu>
-Description: Code to standardize allelic richness and plot population allelic frequencies. The purpose of this package is to standardize population sample size before comparing allelic richness (Â) estimates among different populations. The problem of unequal sample size is typical in clonal species where G, the number of different genotypes or genetic individuals, is the relevant statistic to standardize. Independently of the sample design used for clonal organisms G is unpredictable at that stage, even when N, the number of sample units, is kept constant across populations. Therefore for clonal species the data file should contain a single copy of each multilocus genotype (MLG) present for each population. Usually the G counts among populations for clonal species data sets varies much, thus a standardization of G is needed to compare meaningful estimates of Â. For non-clonal species all MLG should be used, as the standardization is for N, and is normally necessary when the sample size used varied among populations. Graphical tools are also available to; 1) plot allelic richness rarefraction curves for each population (allele.genotype.plot). AND 2) plot allele distribution and frequency across populations for each locus (plot.allele.freq). Version 2 of the package was streamlined to contain only three functions.
+Description: Code to standardize allelic richness and plot population allelic frequencies.
 License: 	GPL-2 | GPL-3 [expanded from: GPL (≥ 2)]
 Encoding: UTF-8
 LazyData: true
