@@ -20,7 +20,7 @@ plot.allele.freq(data, LocusNames,Plogbase=20,textlegend=0.8,freqlegend=c(0.1,0.
   \item{Plogbase}{used to control the points cex argument to plot allele frequencies as points, as in cex=log(allelefreq+1,base=Plogbase)*psize)}
   \item{textlegend}{controls the cex argument for the legend text size}
   \item{freqlegend}{a numeric vector with the allele frequencies used in the legend}
-  \item{poptext}{controls the cex argument for the font size of population names in the y-axis}
+  \item{poptext}{controls the cex argument for the font size of population names in the y-axis. Defaults to 0.5}
   \item{allelesize}{controls the cex argument for the font size of allele names in the x-axis}
   \item{xaxispos}{the pos argument for horizontal axis in the plot, see help(axis)}
   \item{yplotlim}{The ylim argument of the plot, see help(plot.default)}
