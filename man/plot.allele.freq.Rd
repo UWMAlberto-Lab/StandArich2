@@ -16,8 +16,8 @@ plot.allele.freq(data, LocusNames,Plogbase=20,textlegend=0.8,freqlegend=c(0.1,0.
    The first column has the population codes, the 2nd the individual codes. The following columns
   have the allele codes, in integers, using three or two digits  (but be consistent!).
   Missing data is represented by the value 999. There is no   header in this file}
-  \item{LocusNames}{A character vector with the names of loci}
-  \item{Plogbase}{Used to control the points cex argument to plot allele frequencies as poins, as in cex=log(allelefreq+1,base=Plogbase)*psize)}
+  \item{LocusNames}{a character vector with the names of loci}
+  \item{Plogbase}{used to control the points cex argument to plot allele frequencies as points, as in cex=log(allelefreq+1,base=Plogbase)*psize)}
   \item{textlegend}{controls the cex argument for the legend text size}
   \item{freqlegend}{a numeric vector with the allele frequencies used in the legend}
   \item{poptext}{controls the cex argument for the font size of population names in the y-axis}
@@ -25,7 +25,7 @@ plot.allele.freq(data, LocusNames,Plogbase=20,textlegend=0.8,freqlegend=c(0.1,0.
   \item{xaxispos}{the pos argument for horizontal axis in the plot, see help(axis)}
   \item{yplotlim}{The ylim argument of the plot, see help(plot.default)}
   \item{alleleangle}{text rotation for allele names, in degrees, defaults to 45}
-  \item{pdfout}{logical to control if a pdf with the plot should be writen, defaults to FALSE}
+  \item{pdfout}{logical to control if a pdf with the plot should be written, defaults to FALSE. Currently the function to export pdf is not working in RStudio}
   \item{psize}{Used to control the points cex argument to plot allele frequencies as poins, as in cex=log(allelefreq+1,base=Plogbase)*psize}
   \item{pdfname}{Name for the output pdf file to write the plots if pdfout is TRUE, defaults to out.pdf}
 
