@@ -26,7 +26,7 @@ plot.allele.freq(data, LocusNames,Plogbase=20,textlegend=0.8,freqlegend=c(0.1,0.
   \item{yplotlim}{The ylim argument of the plot, see help(plot.default)}
   \item{alleleangle}{text rotation for allele names, in degrees, defaults to 45}
   \item{pdfout}{logical to control if a pdf with the plot should be written, defaults to FALSE. Currently the function to export pdf is not working in RStudio}
-  \item{psize}{Used to control the points cex argument to plot allele frequencies as poins, as in cex=log(allelefreq+1,base=Plogbase)*psize}
+  \item{psize}{Used to control the points cex argument to plot allele frequencies as points, as in cex=log(allelefreq+1,base=Plogbase)*psize}
   \item{pdfname}{Name for the output pdf file to write the plots if pdfout is TRUE, defaults to out.pdf}
 
 }
