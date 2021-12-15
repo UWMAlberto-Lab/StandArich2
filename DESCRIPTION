@@ -4,7 +4,7 @@ Title: Standardizes n to estimate allelic richness and plots
 Version: 2.0.0
 Author: Filipe Alberto
 Maintainer: Filipe Alberto <albertof@uwm.edu>
-Description: Code to standardize allelic richness and plot population allelic frequencies.
-License: 	GPL-2 | GPL-3 [expanded from: GPL (≥ 2)]
+Description: Code to standardize allelic richness and plot population allelic frequencies. 
+License: what license?
 Encoding: UTF-8
 LazyData: true
