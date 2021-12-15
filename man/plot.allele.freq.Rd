@@ -21,6 +21,7 @@ plot.allele.freq(data, LocusNames,Plogbase=20,textlegend=0.8,freqlegend=c(0.1,0.
   \item{textlegend}{controls the cex argument for the legend text size}
   \item{freqlegend}{a numeric vector with the allele frequencies used in the legend}
   \item{poptext}{controls the cex argument for the font size of population names in the y-axis. Defaults to 0.5}
+  \item{pcol}{color of points for each population takes a vector of with length equal to the number of populations. Defaults to black}
   \item{allelesize}{controls the cex argument for the font size of allele names in the x-axis}
   \item{xaxispos}{the pos argument for horizontal axis in the plot, see help(axis)}
   \item{yplotlim}{The ylim argument of the plot, see help(plot.default)}
