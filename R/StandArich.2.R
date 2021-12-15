@@ -145,7 +145,7 @@ plot.allele.freq<-function( data, LocusNames,Plogbase=20,textlegend=0.8,freqlege
 }
 
 
-###################################################################### Allele.genotype.plot
+################################## Allele.genotype.plot
 allele.genotype.plot<-function (results, g=0,xmin=0,xmax=50,xmark=10,main="",lwd=1,lty=1,lcol="black",print.pop=FALSE,pop.text.size=0.5)
 {
     n.loci <- (length(results[1, ]) - 4)
@@ -153,11 +153,11 @@ allele.genotype.plot<-function (results, g=0,xmin=0,xmax=50,xmark=10,main="",lwd
     Population <- factor(results$Pop,levels=unique(results$Pop))
     Pops <- levels(Population)
     npops<-length(Pops)
-    lty<-if(length(lty)==1){rep(lty,npops)}else{lty}
+    lty<-if(length(lty)>1){lty}else{rep(lty,npops)}
     if(length(lty)!=npops){stop("lty vector different from number of pops")}
-    lwd<-if(length(lwd)==1){rep(lwd,npops)}else{lwd}
+    lwd<-if(length(lwd)>1){lwd}else{rep(lwd,npops)}
     if(length(lwd)!=npops){stop("lwd vector different from number of pops")}
-    lcol<-if(length(lcol)==1){rep(lcol,npops)}else{lcol}
+    lcol<-if(length(lcol)>1){lcol}else{rep(lcol,npops)}
     if(length(lcol)!=npops){stop("lcol vector different from number of pops")}
         Sample.size <- results$Ind
     Mean.locus <- results$A
