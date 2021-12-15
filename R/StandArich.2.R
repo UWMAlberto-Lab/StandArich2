@@ -66,6 +66,33 @@ rgenotypes.arich<-function (Popdata, n.replicates,loc.labels){
 
   StandArich.OUT
 }
+############################################## Barplot for standardized allelic richness ####################
+
+AR.barplot<-function(Rlist,lwd=10,col="black",b.bar.x=5,popsize=0.7,error.bar=F){
+
+  smallestN<-min(tapply(Rlist$R[,"Ind"],Rlist$R["Pop"],max))
+  npop<-length(unique(Rlist$R["Pop"])$Pop )
+  # spacing between bars should scale for different number of sites
+  x<-seq(b.bar.x,(npop*(3*b.bar.x)),(3*b.bar.x))
+  y<-as.numeric(Rlist$A[,smallestN])
+  CI95upper<-((sqrt(as.numeric(Rlist$A.sd[,smallestN]))/smallestN)*qt(df=(smallestN-1),p=0.975))
+  plot(x,y,type="h",axes=F, ylim=c(0,ceiling(max(Rlist$A[,smallestN])*1.05)),
+       xlim=c(0,(npop*(3*b.bar.x))+b.bar.x), lwd=lwd,lend=1,
+       col=col, xlab="Populations",ylab="Allelic richness")
+  axis(2,pos=-0.5, at=seq(0,ceiling(max(Rlist$A[,smallestN])*1.05),1),las=2)
+  par(cex=popsize)
+  axis(1,pos=0,at=x,labels=unique(Rlist$R["Pop"])$Pop,las=2)
+  par(cex=1)
+  #loop for error bars
+  if(error.bar==TRUE){
+    for(p in 1:npop){
+      lines(x=rep(x[p],2),y=c(y[p],y[p]+CI95upper[p]))
+      lines(x=c(x[p]-((b.bar.x/2)-1),x[p]+((b.bar.x/2)-1)),y=rep((y[p]+CI95upper[p]),2))
+    }
+
+  }
+
+}
 
 ##################################################### NEW allele.freq.plot###################################
 
