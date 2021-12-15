@@ -71,7 +71,7 @@ rgenotypes.arich<-function (Popdata, n.replicates,loc.labels){
 
 
 plot.allele.freq<-function( data, LocusNames,Plogbase=20,textlegend=0.8,freqlegend=c(0.1,0.15,0.2,0.5,0.75,1),
-                            psize=7,poptext=0.5,allelesize=1,xaxispos=0,yplotlim=-3,alleleangle=45,
+                            psize=7,poptext=0.5,pcol="black",allelesize=1,xaxispos=0,yplotlim=-3,alleleangle=45,
                             pdfout=FALSE,pdfname="out.pdf"){
 
 
@@ -79,6 +79,9 @@ plot.allele.freq<-function( data, LocusNames,Plogbase=20,textlegend=0.8,freqlege
   npop<-length(PopCodes)
   nloc<-(ncol(data)-2)/2
   a<-3
+
+  pcol<-if(length(pcol)>1){pcol}else{rep(pcol,npop)}
+  if(length(pcol)!=npop){stop("pcol vector length different from number of pops")}
 
   if(pdfout==T | pdfout==TRUE){
     pdf(file=pdfname)}
@@ -121,7 +124,7 @@ plot.allele.freq<-function( data, LocusNames,Plogbase=20,textlegend=0.8,freqlege
       LPopAllFreq<-LPopAllCount/sum(LPopAllCount)
 
       for(ap in 1:nPopAll ){
-        points(grep(PopAll[ap],AllelesL),(npop+1)-p,
+        points(grep(PopAll[ap],AllelesL),(npop+1)-p,col=pcol[p],
                cex=(log(LPopAllFreq[ap]+1,base=Plogbase)*psize),pch=16)
       }
 
@@ -186,7 +189,7 @@ allele.genotype.plot<-function (results, g=0,xmin=0,xmax=50,xmark=10,main="",lwd
             if (ssize > d.lim[i])
                 break
         }
-        lines(x=(1:d.lim[i]), y=mean.ssize,lwd=lcol[i],lty=lty[i])
+        lines(x=(1:d.lim[i]), y=mean.ssize,lwd=lwd[i],col=lcol[i],lty=lty[i])
         if(print.pop){text(x=(d.lim[i]+3),y=mean.ssize[d.lim[i]],Pops[i],cex=pop.text.size)}
         i <- i + 1
         if (i > length(d.lim))
