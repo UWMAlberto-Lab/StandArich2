@@ -12,10 +12,10 @@ AR.barplot(Rlist,lwd=10,col="black",b.bar.x=5,popsize=0.7,error.bar=F)
 \arguments{
   \item{Rlist}{a list like the one produced by \code{\link{rgenotypes.arich}} with elements R, A and A.sd}
   \item{lwd}{the width of each bar. The plot used type="h" to produce the bars so this is the lwd used for R line width}
-  \item{col}{a vector of colors for each population. Defaults to black}
+  \item{col}{a vector of color names for each population. Defaults to black}
   \item{b.bar.x}{the space in x plotting units between consecutive bars. Defaults to 5.}
-  \item{popsize}{The size for pop names printed in the x axis, controled by par(cex=popsize)}
-  \item{error.bar}{A logical to print 95% confidence intervals. Defaults to FALSE}
+  \item{popsize}{the size for pop names printed in the x axis, controled by par(cex=popsize). Defaults to 0.7.}
+  \item{error.bar}{A logical value to print 95% confidence intervals. Defaults to FALSE}
 }
 \details{
 Once  \code{\link{rgenotypes.arich} produces the randomized data set with permutation of n, this function can be used to plot a barplot of allelic richness for n equal to the smallest population size across all sites. A vector of colors can be used to plot different populations' bars with different color.
