@@ -68,7 +68,7 @@ rgenotypes.arich<-function (Popdata, n.replicates,loc.labels){
 }
 ############################################## Barplot for standardized allelic richness ####################
 
-AR.barplot<-function(Rlist,lwd=10,col="black",b.bar.x=5,popsize=0.7,error.bar=F){
+AR.barplot<-function(Rlist,lwd=10,col="black",b.bar.x=5,popsize=0.7,error.bar=FALSE){
 
   smallestN<-min(tapply(Rlist$R[,"Ind"],Rlist$R["Pop"],max))
   npop<-length(unique(Rlist$R["Pop"])$Pop )
